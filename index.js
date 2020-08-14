@@ -7,7 +7,7 @@ const helmet = require("helmet");
 const logger = require("./middleware/logger");
 // const posts = require("./posts/postRouter");
 const users = require("./users/userRouter");
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 
 server.use(express.json());
