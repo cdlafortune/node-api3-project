@@ -1,5 +1,5 @@
 // code away!
-require('dotenv').config();
+require('dotenv').config("./.env");
 const express = require("express");
 const server = express();
 const cors = require("cors");
