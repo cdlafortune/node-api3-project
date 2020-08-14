@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require("express");
 const server = express();
 // const posts = require("./posts/postRouter");
+// const logger = require("./middleware/logger");
 const users = require("./users/userRouter");
 const port = process.env.PORT || 5000;
 

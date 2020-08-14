@@ -4,7 +4,7 @@ const postDB = require("../posts/postDb");
 const validateUser = require('../middleware/validateUser');
 const validateUserId = require('../middleware/validateUserId');
 const validatePost = require("../middleware/validatePost");
-const logger = require("./middleware/logger");
+const logger = require("../middleware/logger");
 const router = express.Router();
 
 router.post('/users', logger(), validateUser(), (req, res) => {
