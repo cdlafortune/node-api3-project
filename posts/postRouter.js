@@ -1,9 +1,9 @@
 const express = require('express');
-
+const validatePost = require("../middleware/validatePost");
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  // do your magic!
+router.get('/posts', (req, res) => {
+  res.send('<h1>Welcome to my blog!</h1>');
 });
 
 router.get('/:id', (req, res) => {
